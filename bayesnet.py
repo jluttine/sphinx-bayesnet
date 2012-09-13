@@ -1,6 +1,9 @@
 # -*- coding: utf-8 -*-
 
-# Copyright (c) 2012 Jaakko Luttinen
+# Copyright (C) 2011,2012 Jaakko Luttinen
+#
+# This file is licensed under Version 3.0 of the GNU General Public
+# License.
 
 import os, sys
 
@@ -9,9 +12,6 @@ SPHINX_TIKZ_DIR = os.path.join(DIR, 'sphinx-tikz')
 sys.path.insert(0, SPHINX_TIKZ_DIR)
 
 from tikz import TikzDirective, tikz_role
-#from sphinx.ext.autodoc import ViewList
-
-#BAYESNET_LIBS = 'shapes, fit, chains, arrows'
 
 TIKZ_BAYESNET_FILE = os.path.join(DIR,
                                   'tikz-bayesnet/tikzlibrarybayesnet.code.tex')
