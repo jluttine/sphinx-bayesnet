@@ -25,8 +25,4 @@ License
 Copyright (C) 2012 Jaakko Luttinen, Aalto University
 
 Sphinx-BayesNet is licensed under Version 3.0 of the GNU General
-Public License. See LICENSE file for a text of the license or visit
-http://www.gnu.org/copyleft/gpl.html.
-
-See the folders sphinx-tikz/ and tikz-bayesnet/ for their copyright
-and license.
+Public License.
