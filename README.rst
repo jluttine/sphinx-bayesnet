@@ -16,7 +16,7 @@ This extension defines :code:`bayesnet` directive and role.
       \node[obs, below=of x] (y) {$y$} ;
       \edge {x} {y} ;
 
-or the role as :code:`:bayesnet:``\node[obs] {y}`` `.
+or the role as :code:`:bayesnet:\`\`\node[obs] {y}\`\``.
 
 License
 -------
