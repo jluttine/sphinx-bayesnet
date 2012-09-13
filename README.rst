@@ -6,7 +6,8 @@ factor graphs in Sphinx using TikZ syntax.
 The extension is based on a TikZ library called BayesNet. See
 https://github.com/jluttine/tikz-bayesnet for more information.
 
-This extension defines :code:`bayesnet` directive and role.
+This extension defines :code:`bayesnet` directive, which can be used
+as:
 
 .. code-block::
 
@@ -16,7 +17,7 @@ This extension defines :code:`bayesnet` directive and role.
       \node[obs, below=of x] (y) {$y$} ;
       \edge {x} {y} ;
 
-or the role as :code:`:bayesnet:\`\`\node[obs] {y}\`\``.
+The corresponding role has not yet been implemented.
 
 License
 -------
