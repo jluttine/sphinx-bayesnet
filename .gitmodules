@@ -1,0 +1,6 @@
+[submodule "sphinx-tikz"]
+	path = sphinx-tikz
+	url = https://github.com/jluttine/sphinx-tikz.git
+[submodule "tikz-bayesnet"]
+	path = tikz-bayesnet
+	url = https://github.com/jluttine/tikz-bayesnet.git
