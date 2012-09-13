@@ -9,7 +9,7 @@ https://github.com/jluttine/tikz-bayesnet for more information.
 This extension defines :code:`bayesnet` directive, which can be used
 as:
 
-.. code-block:: none
+.. code-block:: latex
 
    .. bayesnet::
       
