@@ -31,7 +31,6 @@ class BayesNetDirective(TikzDirective):
         (node,) = super(BayesNetDirective, self).run()
         # Add TikZ-BayesNet definitions
         node['tikz'] = BAYESNET_DEFS + node['tikz']
-        print(BAYESNET_DEFS)
         return [node]
 
 def setup(app):
