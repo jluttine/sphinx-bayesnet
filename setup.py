@@ -10,7 +10,7 @@ library called BayesNet.
 '''
 
 requires = ['Sphinx>=0.6',
-            'sphinxcontrib-tikz>=0.4']
+            'sphinxcontrib-tikz']#>=0.4
 
 setup(
     name='sphinxcontrib-bayesnet',

@@ -8,10 +8,10 @@
 import os, sys
 
 DIR = os.path.abspath(os.path.dirname(__file__))
-SPHINX_TIKZ_DIR = os.path.join(DIR, 'sphinx-tikz')
-sys.path.insert(0, SPHINX_TIKZ_DIR)
+#SPHINX_TIKZ_DIR = os.path.join(DIR, 'sphinx-tikz')
+#sys.path.insert(0, SPHINX_TIKZ_DIR)
 
-from tikz import TikzDirective, tikz_role
+from sphinxcontrib.tikz import TikzDirective, tikz_role
 
 TIKZ_BAYESNET_FILE = os.path.join(DIR,
                                   'tikz-bayesnet/tikzlibrarybayesnet.code.tex')
