@@ -35,6 +35,7 @@ setup(
     ],
     platforms='any',
     packages=find_packages(),
+    package_data={'sphinxcontrib': ['tikz-bayesnet/tikzlibrarybayesnet.code.tex']},
     include_package_data=True,
     install_requires=requires,
     namespace_packages=['sphinxcontrib'],
