@@ -1,7 +1,13 @@
 # -*- coding: utf-8 -*-
 
 from setuptools import setup, find_packages
+import sys
 
+# Use 2to3 for Python 3 without warnings in Python 2
+extra = {}
+if sys.version_info >= (3,):
+    extra['use_2to3'] = True
+    
 long_desc = '''
 This package constains BayesNet extension for Sphinx making it
 easy to draw Bayesian networks, graphical models and (directed) factor
@@ -39,5 +45,5 @@ setup(
     include_package_data=True,
     install_requires=requires,
     namespace_packages=['sphinxcontrib'],
-    use_2to3=True,
+    **extra
 )
