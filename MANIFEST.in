@@ -1,2 +1,6 @@
 include README*
-include LICENSE*
+include LICENSE
+include sphinxcontrib/tikz-bayesnet/tikzlibrarybayesnet.code.tex
+include sphinxcontrib/tikz-bayesnet/README.*
+include sphinxcontrib/tikz-bayesnet/LICENSE*
+

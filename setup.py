@@ -16,7 +16,7 @@ BayesNet.
 '''
 
 requires = ['Sphinx>=0.6',
-            'sphinxcontrib-tikz']#>=0.4
+            'sphinxcontrib-tikz>=0.4']
 
 setup(
     name='sphinxcontrib-bayesnet',
@@ -42,7 +42,7 @@ setup(
     platforms='any',
     packages=find_packages(),
     package_data={'sphinxcontrib': ['tikz-bayesnet/tikzlibrarybayesnet.code.tex']},
-    include_package_data=True,
+#    include_package_data=True,
     install_requires=requires,
     namespace_packages=['sphinxcontrib'],
     **extra
