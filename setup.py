@@ -9,7 +9,7 @@ if sys.version_info >= (3,):
     extra['use_2to3'] = True
     
 long_desc = '''
-This package constains BayesNet extension for Sphinx making it
+This package contains BayesNet extension for Sphinx making it
 easy to draw Bayesian networks, graphical models and (directed) factor
 graphs in Sphinx. The extension is based on a TikZ library called
 BayesNet.
