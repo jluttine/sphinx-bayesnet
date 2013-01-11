@@ -3,10 +3,10 @@
 from setuptools import setup, find_packages
 
 long_desc = '''
-This package constains the "bayesnet" Sphinx extension which makes it
+This package constains BayesNet extension for Sphinx making it
 easy to draw Bayesian networks, graphical models and (directed) factor
-graphs in Sphinx using TikZ syntax. The extension is based on a TikZ
-library called BayesNet.
+graphs in Sphinx. The extension is based on a TikZ library called
+BayesNet.
 '''
 
 requires = ['Sphinx>=0.6',
@@ -15,11 +15,11 @@ requires = ['Sphinx>=0.6',
 setup(
     name='sphinxcontrib-bayesnet',
     version='0.1',
-    url='http://bitbucket.org/birkenfeld/sphinx-contrib',
+    url='https://github.com/jluttine/sphinx-bayesnet',
     download_url='http://pypi.python.org/pypi/sphinxcontrib-bayesnet',
     author='Jaakko Luttinen',
     author_email='jaakko.luttinen@iki.fi',
-    description='Sphinx "bayesnet" extension',
+    description='BayesNet extension for Sphinx',
     long_description=long_desc,
     zip_safe=False,
     classifiers=[
