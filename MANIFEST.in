@@ -1,6 +1,11 @@
 include README*
+include INSTALL*
 include LICENSE
 include sphinxcontrib/tikz-bayesnet/tikzlibrarybayesnet.code.tex
 include sphinxcontrib/tikz-bayesnet/README.*
 include sphinxcontrib/tikz-bayesnet/LICENSE*
+include doc/*.rst
+include doc/conf.py
+include doc/Makefile
+include doc/make.bat
 

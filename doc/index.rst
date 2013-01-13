@@ -3,21 +3,12 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to BayesNet extension for Sphinx's documentation!
-=========================================================
 
-Contents:
+.. include:: ../README.rst
 
-.. toctree::
-   :maxdepth: 2
+.. include:: ../INSTALL.rst
 
-   example
+.. include:: example.rst
 
 
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
 
