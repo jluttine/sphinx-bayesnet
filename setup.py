@@ -18,7 +18,7 @@ requires = ['Sphinx>=0.6',
 
 setup(
     name='sphinxcontrib-bayesnet',
-    version='0.1',
+    version='0.3',
     url='https://github.com/jluttine/sphinx-bayesnet',
     download_url='http://pypi.python.org/pypi/sphinxcontrib-bayesnet',
     author='Jaakko Luttinen',
