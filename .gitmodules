@@ -1,3 +1,0 @@
-[submodule "sphinxcontrib/tikz-bayesnet"]
-	path = sphinxcontrib/tikz-bayesnet
-	url = https://github.com/jluttine/tikz-bayesnet.git
