@@ -7,17 +7,7 @@
 
 import os, sys
 
-DIR = os.path.abspath(os.path.dirname(__file__))
-#SPHINX_TIKZ_DIR = os.path.join(DIR, 'sphinx-tikz')
-#sys.path.insert(0, SPHINX_TIKZ_DIR)
-
 from sphinxcontrib.tikz import TikzDirective, tikz_role
-
-TIKZ_BAYESNET_FILE = os.path.join(DIR,
-                                  'tikz-bayesnet/tikzlibrarybayesnet.code.tex')
-bnfile = open(TIKZ_BAYESNET_FILE)
-BAYESNET_DEFS = bnfile.read()
-bnfile.close()
 
 def bayesnet_role(role, rawtext, text, lineno, inliner, option={}, content=[]):
     # TODO: Add the BayesNet definitions to the content!
@@ -26,11 +16,13 @@ def bayesnet_role(role, rawtext, text, lineno, inliner, option={}, content=[]):
 class BayesNetDirective(TikzDirective):
     def run(self):
         # Add TikZ libraries
-        #self.options['libs'] = self.options.get('libs', '') + ',' + BAYESNET_LIBS
+        libs = self.options.get("libs", "")
+        self.options["libs"] = (
+            "bayesnet" if libs == "" else
+            libs + ",bayesnet"
+        )
         # Run TikZ node
         (node,) = super(BayesNetDirective, self).run()
-        # Add TikZ-BayesNet definitions
-        node['tikz'] = BAYESNET_DEFS + node['tikz']
         return [node]
 
 def setup(app):
