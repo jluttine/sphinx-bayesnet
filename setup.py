@@ -3,9 +3,6 @@
 from setuptools import setup, find_packages
 import sys
 
-# Use 2to3 for Python 3 without warnings in Python 2
-extra = {}
-
 long_desc = '''
 This package contains BayesNet extension for Sphinx making it
 easy to draw Bayesian networks, graphical models and (directed) factor
@@ -18,7 +15,7 @@ requires = ['Sphinx>=0.6',
 
 setup(
     name='sphinxcontrib-bayesnet',
-    version='0.3',
+    version='0.4',
     url='https://github.com/jluttine/sphinx-bayesnet',
     download_url='http://pypi.python.org/pypi/sphinxcontrib-bayesnet',
     author='Jaakko Luttinen',
@@ -43,5 +40,4 @@ setup(
 #    include_package_data=True,
     install_requires=requires,
     namespace_packages=['sphinxcontrib'],
-    **extra
 )
